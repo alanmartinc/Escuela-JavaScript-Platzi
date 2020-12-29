@@ -1,2 +1,2 @@
 # Escuela-JavaScript-Platzi
-Cursos Básicos, intermedios y avanzados
+Cursos Básicos, intermedios y avanzados.
