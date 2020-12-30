@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+
+    <style>
+        body {
+            margin: 0px;
+            background-color: #AB88FF;
+        }
+        .header {
+            background-color: #AB88FF;
+            width: 100%;
+            height: 80px;
+        }
+        .header__img {
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .header__menu {
+            margin-right: 30px;
+        }
+        .header__menu ul {
+            /*display: none;*/
+            list-style: none;
+            padding: 0px;
+            position: absolute;
+            width: 100px;
+            text-align: right;
+            margin: 0px 0px 0px -14px;
+        }
+        .header__menu--profile {
+            margin-right: 8px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="../Curso de Frontend Developer/img/logo-platzi.png" alt="#">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="../Curso de Frontend Developer/img/user-icon.png" alt="#">
+                <p>Perfil</p>
+            </div>
+            
+            <ul>
+                <li><a href="/">Cuenta</a></li>
+                <li><a href="/">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>
