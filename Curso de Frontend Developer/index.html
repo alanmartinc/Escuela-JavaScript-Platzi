@@ -98,7 +98,7 @@
             margin: 70px 0px;
             padding-bottom: 10px;
         }
-        .carousel__item {
+        .carousel-item {
             background-color: wheat;
             width: 200px;
             height: 250px;
@@ -109,16 +109,34 @@
             cursor: pointer;
             transition: 450ms all;
             transform-origin: center left;
+            position: relative;
         }
-        .carousel__item:hover ~ .carousel__item {
+        .carousel-item:hover ~ .carousel-item {
             transform: translate3d(100px, 0, 0);
         }
-        .carousel__container:hover .carousel__item {
+        .carousel__container:hover .carousel-item {
             opacity: 0.3;
         }
-        .carousel__container:hover .carousel__item:hover {
+        .carousel__container:hover .carousel-item:hover {
             transform: scale(1.5);
             opacity: 1;
+        }
+        .carousel-item__img {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .carousel-item__details {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+            font-size: 10px;
+            opacity: 0;
+            transition: 450ms opacity;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
         }
     </style>
 </head>
@@ -145,16 +163,29 @@
 
     <section class="carousel">
         <div class="carousel__container">
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
-            <div class="carousel__item"></div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/6167767/pexels-photo-6167767.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="#">
+                    <div class="carousel-item__details">
+                        <div>
+                            <img src="../Curso de Frontend Developer/img/play-icon.png" alt="#">
+                            <img src="../Curso de Frontend Developer/img/plus-icon.png" alt="#">
+                        </div> 
+                    </div>
+                    <p class="carousel-item__details--title">Título descriptivo</p>
+                    <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+            </div>
+            
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/6102555/pexels-photo-6102555.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="#">
+                    <div class="carousel-item__details">
+                        <div>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div> 
+                    </div>
+                    <p class="carousel-item__details--title">Título descriptivo</p>
+                    <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+            </div>
         </div>
     </section>
 </body>
